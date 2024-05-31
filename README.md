@@ -73,7 +73,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 Para dúvidas, sugestões ou feedback, entre em contato:
 - Email: renato_mry@hotmail.com
-- GitHub: [Seu Usuário](https://github.com/Renato-Ribeiroo)
+- GitHub: [Renato Ribeiro](https://github.com/Renato-Ribeiroo)
 
 ---
 
