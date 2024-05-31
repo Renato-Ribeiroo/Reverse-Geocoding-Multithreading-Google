@@ -80,3 +80,83 @@ Para dúvidas, sugestões ou feedback, entre em contato:
 Divirta-se usando o projeto geocodificação reversa! 🌍🔄
 
 ---
+# Reverse Geocoding with Google Maps API
+
+![Reverse Geocoding](https://img.shields.io/badge/Reverse%20Geocoding-brightgreen)
+
+This project uses the Google Maps Geocoding API to convert geographic coordinates (latitude and longitude) into human-readable addresses, including country, state, and city. The script reads an Excel spreadsheet with the coordinates, performs reverse geocoding, and saves the results in a new Excel spreadsheet.
+
+## 🚀 Features
+
+- **Reverse Geocoding:** Converts coordinates (latitude and longitude) into addresses.
+- **Parallelism:** Uses `ThreadPoolExecutor` for asynchronous API calls, enhancing efficiency and performance for large requests.
+- **Excel I/O:** Reads and writes data in Excel files for ease of use.
+
+## 📦 Requirements
+
+- Python 3.x
+- Libraries: `requests`, `pandas`, `concurrent.futures`, `openpyxl`
+
+## 🛠️ Setup
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/Renato-Ribeiroo/Reverse-Geocoding-Multithreading-Google
+    ```
+2. Install the required libraries:
+    ```bash
+    pip install requests pandas openpyxl
+    ```
+3. Insert your Google Maps API key in the script:
+    ```python
+    API_KEY = 'YOUR_GOOGLE_API_KEY'
+    ```
+4. Prepare your input Excel spreadsheet with columns "Latitude" and "Longitude".
+
+## 📄 Usage
+
+1. Place the input Excel spreadsheet in the same directory as the script.
+2. Edit the input file name in the script (if necessary):
+    ```python
+    input_file = "Spreadsheet with Lat and Long.xlsx"
+    output_file = "Processed Spreadsheet.xlsx"
+    ```
+3. Run the script:
+    ```bash
+    python your_script.py
+    ```
+
+## 🌟 Examples
+
+### Input Spreadsheet
+
+| Latitude | Longitude |
+|----------|-----------|
+| -23.5505 | -46.6333  |
+| 40.7128  | -74.0060  |
+
+### Output Spreadsheet
+
+| Latitude | Longitude | Country      | State | City       |
+|----------|-----------|--------------|-------|------------|
+| -23.5505 | -46.6333  | Brazil       | SP    | São Paulo  |
+| 40.7128  | -74.0060  | United States| NY    | New York   |
+
+## 📝 Note
+
+- Ensure your Google Maps API key has geocoding permissions.
+- Using the Google Maps API may incur costs, check the Google pricing policy.
+
+## 🤝 Contributions
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📧 Contact
+
+For questions, suggestions, or feedback, get in touch:
+- Email: renato_mry@hotmail.com
+- GitHub: [Renato Ribeiro](https://github.com/Renato-Ribeiroo)
+
+---
+
+Enjoy using the reverse geocoding project! 🌍🔄
