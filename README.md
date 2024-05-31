@@ -19,7 +19,7 @@ Este projeto utiliza a API de Geocodificação do Google Maps para converter coo
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/Renato-Ribeiroo/Reverse-Geocoding-Multithreading-Google
     ```
 2. Instale as bibliotecas necessárias:
     ```bash
